@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>OpenNow Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for OpenNow / 即刻阅览.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --accent: #0a84ff;
+      --muted: #667085;
+      --line: #d0d5dd;
+      --panel: #f7f8fb;
+      --text: #111827;
+      --bg: #ffffff;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --muted: #a1a8b3;
+        --line: #303846;
+        --panel: #151a23;
+        --text: #f9fafb;
+        --bg: #0b0f17;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--text);
+      background: var(--bg);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.65;
+    }
+
+    main {
+      max-width: 880px;
+      margin: 0 auto;
+      padding: 40px 20px 72px;
+    }
+
+    header {
+      padding-bottom: 22px;
+      border-bottom: 1px solid var(--line);
+      margin-bottom: 28px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      font-size: clamp(34px, 7vw, 58px);
+      line-height: 1.05;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      margin: 38px 0 14px;
+      font-size: 26px;
+      line-height: 1.2;
+    }
+
+    h3 {
+      margin: 26px 0 8px;
+      font-size: 18px;
+      line-height: 1.3;
+    }
+
+    p, li { font-size: 16px; }
+
+    ul { padding-left: 22px; }
+
+    a {
+      color: var(--accent);
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .meta, nav, footer {
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .notice {
+      margin: 24px 0 32px;
+      padding: 16px 18px;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: var(--panel);
+    }
+
+    .language-label {
+      margin-top: 44px;
+      padding-top: 30px;
+      border-top: 1px solid var(--line);
+    }
+
+    footer {
+      margin-top: 44px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+    }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <p class="meta">OpenNow / 即刻阅览</p>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: June 14, 2026</p>
+    <nav><a href="index.html">Terms of Use</a> · <a href="mailto:1062749739@qq.com">Support</a></nav>
+  </header>
+
+  <section class="notice" aria-label="Release configuration note">
+    <strong>Release configuration:</strong>
+    publish this file to the final HTTPS Privacy Policy address, then set that address as
+    <code>ONPrivacyPolicyURL</code>. Set <code>ONSupportEmail</code> to
+    <a href="mailto:1062749739@qq.com">1062749739@qq.com</a>.
+  </section>
+
+  <h2>English</h2>
+
+  <h3>Overview</h3>
+  <p>OpenNow is a local-first file reader. Its core purpose is to help you open received files and read them immediately, without creating an account.</p>
+  <p>By default, imported files, readable text, bookmarks, reading progress, favorites, and local AI chat history stay on your device inside the app sandbox.</p>
+  <p>OpenNow does not include an app account system, advertising SDK, tracking SDK, analytics SDK, or cross-app tracking in the current release.</p>
+
+  <h3>Files And Local Storage</h3>
+  <p>When you import or open a file, OpenNow may store:</p>
+  <ul>
+    <li>the file or a local copy of it;</li>
+    <li>filename, file type, file size, and source label;</li>
+    <li>readable text extracted for local reading and search;</li>
+    <li>duplicate fingerprints used only to identify repeated local files;</li>
+    <li>reading progress, favorite state, and last-opened time.</li>
+  </ul>
+  <p>This data is stored locally by default in the app sandbox. You can delete documents, clear unused imported file cache, export records, or share selected content using iOS share controls.</p>
+
+  <h3>Clipboard</h3>
+  <p>OpenNow reads Clipboard content only when you explicitly choose the Clipboard import action. The app does not monitor Clipboard content in the background.</p>
+
+  <h3>Export, Sharing, And Downloads</h3>
+  <p>When you share, export, or download a document or media file, data leaves OpenNow only through the destination you choose in the iOS share sheet. PDF export, long-image export, and original media download are Pro features.</p>
+
+  <h3>iCloud Sync</h3>
+  <p>iCloud sync is optional, Pro-gated, and started by you from Settings. When you start sync, OpenNow merges your document list and referenced imported files through your own iCloud Drive container.</p>
+  <p>If iCloud Drive is unavailable, OpenNow shows an unavailable message and keeps local documents unchanged. You can delete OpenNow cloud data from the app's iCloud sync controls when that feature is available on your device.</p>
+
+  <h3>AI Document Understanding</h3>
+  <p>Online AI is optional, Pro-gated, and user-initiated.</p>
+  <p>OpenNow does not ship with a default AI provider key. To use online AI, you configure your own provider key, currently DeepSeek or ChatGPT/OpenAI. Your API key is stored in Keychain on your device.</p>
+  <p>Before an online AI request, OpenNow shows a consent prompt. After you continue, OpenNow extracts readable text from the selected document on device where possible, then sends the selected text and your question to the AI provider you configured. The provider processes the request under its own terms and privacy policy.</p>
+  <p>OpenNow may extract AI-readable text from Markdown, text, JSON, HTML, MHTML, ZIP web packages, PDFs, images, audio, and supported Office/RTF files. Unsupported formats are rejected before asking you to buy Pro for that action.</p>
+  <p>AI responses and chat history are stored locally on your device unless you choose to share them.</p>
+
+  <h3>Image OCR And Audio Speech Recognition</h3>
+  <p>For image documents, OpenNow may use on-device text recognition before an AI request.</p>
+  <p>For audio documents, OpenNow may request iOS Speech Recognition permission to create text for AI document understanding. Recognized speech text follows the same AI flow only after you initiate the AI action and accept the prompt.</p>
+
+  <h3>Purchases</h3>
+  <p>OpenNow Pro purchases, renewals, subscription management, refunds, and billing are handled by Apple through StoreKit and the App Store. OpenNow stores a local entitlement flag and refreshes it from current App Store entitlements.</p>
+
+  <h3>Feedback</h3>
+  <p>If you send feedback from Settings, OpenNow opens your mail client with a message draft. You choose whether to send it and what to include.</p>
+
+  <h3>Contact</h3>
+  <p>Contact: <a href="mailto:1062749739@qq.com">1062749739@qq.com</a></p>
+
+  <h2 class="language-label">简体中文</h2>
+
+  <h3>概览</h3>
+  <p>即刻阅览是一款本地优先的文件阅读器。核心目标是让你收到文件后可以立即打开、立即阅读，无需创建账号。</p>
+  <p>默认情况下，导入文件、可读文本、收藏、阅读进度、最近打开记录和本地 AI 对话历史会保留在设备上的应用沙盒中。</p>
+  <p>当前版本不包含应用账号系统、广告 SDK、追踪 SDK、分析 SDK 或跨 App 追踪。</p>
+
+  <h3>文件与本地存储</h3>
+  <p>当你导入或打开文件时，即刻阅览可能会保存：</p>
+  <ul>
+    <li>文件本身或本地副本；</li>
+    <li>文件名、文件类型、文件大小和来源标签；</li>
+    <li>为本地阅读和搜索提取的可读文本；</li>
+    <li>仅用于识别本地重复文件的指纹；</li>
+    <li>阅读进度、收藏状态和最近打开时间。</li>
+  </ul>
+  <p>这些数据默认存储在本机应用沙盒中。你可以删除文档、清理未使用的导入文件缓存、导出记录，或通过 iOS 分享面板分享选中的内容。</p>
+
+  <h3>剪贴板</h3>
+  <p>即刻阅览只会在你明确点击“从剪贴板导入”时读取剪贴板内容，不会在后台监控剪贴板。</p>
+
+  <h3>导出、分享与下载</h3>
+  <p>当你分享、导出或下载文档与媒体文件时，数据只会通过你在 iOS 分享面板中选择的目标离开即刻阅览。PDF 导出、长图导出和媒体原文件下载属于 Pro 功能。</p>
+
+  <h3>iCloud 同步</h3>
+  <p>iCloud 同步是可选的 Pro 功能，需要你在设置中主动开始。开始同步后，即刻阅览会通过你自己的 iCloud Drive 容器合并文档列表和被引用的导入文件。</p>
+  <p>如果当前设备无法使用 iCloud Drive，即刻阅览会显示不可用提示，并保持本地文档不变。当设备支持时，你可以在 App 的 iCloud 同步控制中删除即刻阅览的云端数据。</p>
+
+  <h3>AI 文档理解</h3>
+  <p>在线 AI 是可选的 Pro 功能，并且只会在你主动发起时使用。</p>
+  <p>即刻阅览不会内置默认 AI 服务商密钥。使用在线 AI 前，你需要配置自己的服务商 Key，目前支持 DeepSeek 或 ChatGPT/OpenAI。你的 API Key 会存储在本机 Keychain 中。</p>
+  <p>每次在线 AI 请求前，即刻阅览都会显示确认提示。你确认后，即刻阅览会尽可能先在本机提取所选文档的可读文本，然后把选中文本和你的问题发送给你配置的 AI 服务商。服务商会按照其自身条款和隐私政策处理请求。</p>
+  <p>即刻阅览可以尝试从 Markdown、文本、JSON、HTML、MHTML、ZIP 网页包、PDF、图片、音频以及可提取文字的 Office/RTF 文件中提取 AI 可读文本。不支持的格式会在购买提示前被拒绝。</p>
+  <p>AI 回复和对话历史默认保存在本机，除非你主动分享。</p>
+
+  <h3>图片 OCR 与音频语音识别</h3>
+  <p>对于图片文档，即刻阅览可能会先在设备上进行文字识别，再用于 AI 请求。</p>
+  <p>对于音频文档，即刻阅览可能会请求 iOS 语音识别权限，将音频转换为可用于 AI 文档理解的文本。识别出的文本只有在你主动发起 AI 操作并确认后，才会进入 AI 流程。</p>
+
+  <h3>购买</h3>
+  <p>即刻阅览 Pro 的购买、续订、订阅管理、退款和账单由 Apple 通过 StoreKit 和 App Store 处理。即刻阅览会保存本地权益标记，并从当前 App Store 权益刷新状态。</p>
+
+  <h3>反馈</h3>
+  <p>如果你在设置中发送反馈，即刻阅览会打开你的邮件客户端并生成一封草稿。是否发送以及包含哪些内容由你决定。</p>
+
+  <h3>联系方式</h3>
+  <p>联系方式：<a href="mailto:1062749739@qq.com">1062749739@qq.com</a></p>
+
+  <footer>
+    <p>Publish this page at the final <code>ONPrivacyPolicyURL</code>.</p>
+  </footer>
+</main>
+</body>
+</html>
